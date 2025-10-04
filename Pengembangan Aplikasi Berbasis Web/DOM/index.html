@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container" aria-labelledby="title" role="main">
+    <h1 id="title">Task</h1>
+
+    <form class="input-area" autocomplete="off">
+        <input id="task-input" type="text" placeholder="Write a new assignment..." aria-label="Input tugas" maxlength="120" autocomplete="off" />
+        <button id="add-btn" class="btn primary" type="button" aria-label="Tambah tugas">Add Task</button>
+    </form>
+
+    <ul id="task-list" class="task-list" aria-live="polite">
+    </ul>
+
+    <p class="hint">Press <strong>Enter</strong> to add. Mark complete / delete via the button on each task.</p>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
