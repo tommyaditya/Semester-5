@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perbandingan Peta Web Mercator dan EPSG:4326</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/proj4"></script>
+    <script src="https://unpkg.com/proj4leaflet"></script>
+</head>
+<body>
+    <header>
+        <h1>🌍 Perbandingan Proyeksi: Web Mercator vs EPSG:4326</h1>
+        <p>Contoh visualisasi menggunakan file <strong>map.geojson</strong></p>
+    </header>
+
+    <main>
+        <section id="map-container">
+            <div class="map-box">
+            <h2>🧭 Web Mercator (EPSG:3857)</h2>
+            <div id="map1" class="map"></div>
+        </div>
+
+        <div class="map-box">
+        <h2>📐 EPSG:4326</h2>
+        <div id="map2" class="map"></div>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+    <p>Created by Ciel | Sistem Informasi Geografis 💙</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
